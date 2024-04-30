@@ -1,0 +1,153 @@
+body {
+    background-image: url(64b85e578e12519cf788b4594178b0f5.jpg);
+    background-size: cover;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+main {
+    min-height: 170vh;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.title {
+   font-family: "Jersey 25", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 15px 0 2px rgb(192, 191, 191);
+    margin-top: 25px;
+    font-size: 100px;
+}
+.title small {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.credits {
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    margin-top: 2em;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+.window {
+    width: 620px;
+    background: GhostWhite;
+    border-radius: 0.3rem;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.window .window-header {
+    height: 37px;
+    background: rgb(137, 161, 170);
+    position: relative;
+}
+.window .window-header .action-buttons {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 15px 0 0 rgb(0, 200, 255), 30px 0 0 rgb(46, 104, 112);
+}
+.window .window-header .language {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    height: 21px;
+    padding: 0 1em;
+    text-align: right;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.window .window-header .language:before {
+    content: "asd";
+}
+.window .window-header .language:hover {
+    background: rgba(0,0,0,0.1);
+}
+.window .window-body {
+    position: relative;
+    height: 300px;
+}
+.window .window-body .code-input, .window .window-body .code-output {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: none;
+    font-family: "PT Mono", monospace;
+    font-size: 0.8rem;
+    background: transparent;
+    white-space: pre-wrap;
+    line-height: 1.5em;
+    word-wrap: break-word;
+}
+.window .window-body .code-input {
+    opacity: 0.7;
+    margin: 0;
+    color: #999;
+    resize: none;
+}
+.window .window-body .code-output {
+    pointer-events: none;
+    z-index: 3;
+    margin: 0;
+    overflow-y: auto;
+}
+.window .window-body .code-output code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 1rem;
+    display: block;
+    color: #b932b0;
+    font-size: 0.8rem;
+    font-family:'Times New Roman', Times, serif
+}
+a.token {
+    text-decoration: none;
+}
+.token.selector, .token.punctuation, .token.keyword {
+    color: rgb(146, 163, 211);
+}
+.token.property, .token.number, .token.string, .token.punctuation, .token.tag-id {
+    color: rgb(109, 140, 172);
+}
+.token.function, .token.attr-name {
+    color: rgb(5, 189, 196);
+}
+.token.atrule .atrule-id {
+    color: rgb(109, 36, 177);
+}
+.token.boolean {
+    color: rgb(134, 156, 179);
+}
+.token.comment {
+    color: rgb(71, 71, 71);
+}
+.language-php .variable {
+    color: rgb(26, 172, 160);
+}
